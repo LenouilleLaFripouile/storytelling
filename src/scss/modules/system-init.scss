@@ -16,8 +16,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative;
+  border: solid 2px wheat;
   img {
     position: absolute;
     top: 10;

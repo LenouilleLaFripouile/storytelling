@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
+    <div class="sys-bg">
+      <img class="sys-bg-img" src="./img/bg.png" alt="background" />
+      <img class="sys-bg-img-fixed" src="./img/bg.png" alt="background fixed" />
+
+      <div class="sys-init">
+        <video
+          class="video"
+          playsinline="true"
+          webkit-playsinline="true"
+          preload="auto"
+          muted="muted"
+          src="./vid/sys-init.webm"
+          type="video/webm"
+        ></video>
+      </div>
+    </div>
     <div class="sys-click-init">
       <h1>système en veille cliquer pour initialiser</h1>
       <button>démarrer</button>
       <img src="./img/system.png" alt="" />
     </div>
-    <div class="sys-init">
-      <video
-        class="video"
-        playsinline="true"
-        webkit-playsinline="true"
-        preload="auto"
-        muted="muted"
-        src="./vid/sys-init.webm"
-        type="video/webm"
-      ></video>
-    </div>
-
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
