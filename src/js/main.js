@@ -5,6 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 document.addEventListener("DOMContentLoaded", () => {
   const bgContainer = document.querySelector(".sys-bg");
   const bgImg = document.querySelector(".sys-bg-img");
+  const sysClickInit = document.querySelector(".sys-click-init");
 
   if (!bgContainer || !bgImg) return;
 
@@ -51,5 +52,23 @@ document.addEventListener("DOMContentLoaded", () => {
       bgImg.style.transform = "scale(1)";
     },
     markers: false,
+  });
+
+  if (!sysClickInit) return;
+
+  ScrollTrigger.create({
+    trigger: sysClickInit,
+    start: "top bottom", // quand le haut de sys-click-init entre dans le viewport
+    end: "bottom top", // jusqu'à ce que le bas sorte du viewport
+    scrub: true, // pour que progress soit smooth
+    onUpdate: (self) => {
+      // Si le scroll est à 40 % ou plus → active la classe
+      if (self.progress >= 0.4) {
+        sysClickInit.classList.add("sys-click-init-is-active");
+      } else {
+        sysClickInit.classList.remove("sys-click-init-is-active");
+      }
+    },
+    markers: false, // mettre true pour debug
   });
 });
