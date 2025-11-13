@@ -1,4 +1,4 @@
-import gsap from "gsap";
+/* import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sysClickInitImg.style.display = "none";
 
         // afficher le container vidéo
-        sysInitVidContainer.style.display = "block";
+        sysInitVid.style.display = "block";
 
         // attendre que le navigateur applique le display:block avant d'animer
         requestAnimationFrame(() => {
@@ -148,3 +148,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+ */
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+const sysContainer = document.querySelector(".sys-container");
+const tlintro = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sys-container",
+    start: "top",
+    end: "300%",
+    scrub: true,
+    pin: true,
+    markers: true,
+  },
+}); // Déclaration de la timeline, enregistrée dans une variable "tl"
+tlintro.to(".sys-vid", {
+  backgroundPosition: "-20px",
+  duration: 5,
+}); // Première animation ajoutée à la timeline
+tlintro.to(".sys-vid", {
+  x: "-20px",
+  duration: 5,
+}); // Première animation ajoutée à la timeline
+tlintro.to(".sys-vid", {
+  x: "-20px",
+  duration: 5,
+}); // Première animation ajoutée à la timeline
