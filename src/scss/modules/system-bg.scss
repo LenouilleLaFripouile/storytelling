@@ -38,3 +38,12 @@
     opacity: 1; // on révèle la version fixe
   }
 }
+
+.sys-bg-overlay {
+  position: absolute;
+  inset: 0; /* occupe tout l’espace */
+  background: black;
+  opacity: 0; /* invisible au départ */
+  z-index: -50; /* au-dessus du bg, mais sous le reste */
+  pointer-events: none;
+}

@@ -10,24 +10,25 @@
     <div class="sys-bg">
       <img class="sys-bg-img" src="./img/bg.png" alt="background" />
       <img class="sys-bg-img-fixed" src="./img/bg.png" alt="background fixed" />
-
-      <div class="sys-init">
-        <video
-          class="video"
-          playsinline="true"
-          webkit-playsinline="true"
-          preload="auto"
-          muted="muted"
-          src="./vid/sys-init.webm"
-          type="video/webm"
-        ></video>
-      </div>
+      <div class="sys-bg-overlay"></div>
+      <div class="sys-init"></div>
     </div>
     <div class="sys-click-init">
       <div class="sys-click-init-img">
         <h1>système en veille cliquer pour initialiser</h1>
         <button>démarrer</button>
       </div>
+    </div>
+    <div class="sys-init-vid-container">
+      <video
+        class="sys-init-vid"
+        playsinline="true"
+        webkit-playsinline="true"
+        preload="auto"
+        muted="muted"
+        src="./vid/sys-init.webm"
+        type="video/webm"
+      ></video>
     </div>
     <script src="js/main.js" type="module"></script>
   </body>
