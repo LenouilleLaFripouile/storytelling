@@ -29,7 +29,6 @@
         src="./vid/sys-init.webm"
         type="video/webm"
       ></video> -->
-
     <div class="sys-container">
       <div class="sys-click-init">
         <div class="sys-click-init-img">
@@ -38,7 +37,7 @@
         </div>
       </div>
       <video
-        class="sys-init-vid"
+        class="sys-init-vid sys-init-vid-hidden"
         playsinline="true"
         webkit-playsinline="true"
         preload="auto"
@@ -46,8 +45,31 @@
         src="./vid/sys-init.webm"
         type="video/webm"
       ></video>
+      <div class="sys-click-supp sys-click-supp-hidden">
+        <div class="sys-click-supp-img">
+          <h1>Voulez vous supprimer les fichiers</h1>
+          <div class="sys-click-supp-buttons">
+            <button>oui</button> <button>non</button>
+          </div>
+        </div>
+      </div>
     </div>
-
+    <div class="sys-container-supp">
+      <video
+        class="sys-supp-vid"
+        playsinline="true"
+        webkit-playsinline="true"
+        preload="auto"
+        muted="muted"
+        src="./vid/sys-supp.webm"
+        type="video/webm"
+      ></video>
+      <div class="sys-supp-err sys-supp-err-hidden">
+        <div class="sys-supp-err-img">
+          <h1>Une conscience refuse la suppression</h1>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>

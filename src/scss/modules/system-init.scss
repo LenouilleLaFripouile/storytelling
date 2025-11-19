@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.hidden {
+    opacity: 0;
+  }
   .sys-click-init-img {
     opacity: 1;
     background-image: url("../img/system.png");
@@ -52,17 +56,86 @@
   }
 }
 
-.sys-container {
+.sys-container,
+.sys-container-supp {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 .sys-init-vid {
   position: absolute;
   transform: scale(0.9);
   width: 100%;
+
+  &-hidden {
+    display: none;
+  }
+}
+
+.sys-click-supp {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: none;
+  }
+
+  .sys-click-supp-img {
+    opacity: 1;
+    background-image: url("../img/system.png");
+    background-size: contain;
+    width: 70vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: column;
+  }
+  h1 {
+    width: 40%;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  button {
+    background: none;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 3px solid #000;
+    top: 350;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .sys-click-supp-buttons {
+    display: flex;
+    gap: 50px;
+  }
+
+  button:hover {
+    border: solid 3px rgb(0, 119, 255);
+    color: rgb(0, 119, 255);
+  }
 }
