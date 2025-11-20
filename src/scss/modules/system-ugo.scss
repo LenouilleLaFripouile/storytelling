@@ -1,0 +1,226 @@
+.sys-ugo-container {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: none;
+  }
+}
+
+.sys-ugo {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: none;
+  }
+
+  .sys-ugo-img {
+    opacity: 1;
+    background-image: url("../img/system.png");
+    background-size: contain;
+    width: 70vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: column;
+  }
+  h1 {
+    width: 40%;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+.sys-ugo-restore {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: none;
+  }
+
+  .sys-ugo-restore-img {
+    opacity: 1;
+    background-image: url("../img/system.png");
+    background-size: contain;
+    width: 70vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: column;
+  }
+  h1 {
+    width: 40%;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+.sys-ugo-restore-click {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: none;
+  }
+
+  .sys-ugo-restore-click-img {
+    opacity: 1;
+    background-image: url("../img/system.png");
+    background-size: contain;
+    width: 70vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-direction: column;
+  }
+  h1 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  button {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: none;
+    padding: 10px;
+    backdrop-filter: blur(15px);
+  }
+  button:hover {
+    border: solid 1px rgb(0, 119, 255);
+    color: rgb(0, 119, 255);
+  }
+}
+
+.sys-ugo-card {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: flex;
+  }
+
+  .sys-ugo-card-img {
+    opacity: 1;
+    background-image: url("../img/system.png");
+    background-size: contain;
+    width: 70vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-direction: row;
+  }
+  h1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  button {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #b0d9f5;
+  }
+  .sys-ugo-card-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    border-radius: 10px;
+    width: 50%;
+  }
+}
