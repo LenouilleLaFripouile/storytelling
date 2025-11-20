@@ -18,9 +18,9 @@
   .sys-supp-err-img {
     opacity: 1;
     background-image: url("../img/sys-error.png");
-    background-size: cover;
-    width: 70vw;
-    height: 70vh;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -32,6 +32,82 @@
   h1 {
     width: 40%;
     color: #ffffff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+.sys-supp-yves {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: none;
+  }
+
+  .sys-supp-yves-img {
+    opacity: 1;
+    background-image: url("../img/system.png");
+    background-size: contain;
+    width: 70vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: column;
+  }
+  h1 {
+    width: 50%;
+    color: #000000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+.sys-supp-deso {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: none;
+  }
+
+  .sys-supp-deso-img {
+    opacity: 1;
+    background-image: url("../img/system.png");
+    background-size: contain;
+    width: 70vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: column;
+  }
+  h1 {
+    width: 50%;
+    color: #000000;
     text-align: center;
     font-family: Montserrat;
     font-size: 30px;

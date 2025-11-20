@@ -1,0 +1,61 @@
+.sys-supp-save {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-hidden {
+    display: none;
+  }
+
+  .sys-supp-save-img {
+    opacity: 1;
+    background-image: url("../img/system.png");
+    background-size: contain;
+    width: 70vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: column;
+  }
+  h1 {
+    width: 50%;
+    color: #000000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  img {
+    position: absolute;
+    z-index: -1;
+  }
+  .sys-flash-1 {
+    left: 50;
+    top: -100;
+  }
+  .sys-flash-2 {
+    right: 0;
+    top: -100;
+  }
+  .sys-flash-3 {
+    left: -80;
+    bottom: 40;
+  }
+  .sys-flash-4 {
+    right: -30;
+    bottom: -50;
+  }
+  .sys-flash-5 {
+    left: 100;
+    bottom: -110;
+  }
+}
