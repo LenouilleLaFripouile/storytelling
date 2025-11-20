@@ -12,3 +12,9 @@ img,
 video {
   display: block;
 }
+
+body {
+  background-image: url(../img/bg.png?as=webp);
+  background-position: left;
+  background-size: 255%;
+}

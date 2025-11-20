@@ -11,7 +11,6 @@ window.addEventListener("DOMContentLoaded", function () {
   const sysClickVid = document.querySelector(".sys-init-vid");
   const sysClickSupp = document.querySelector(".sys-click-supp");
   const sysContainerSupp = document.querySelector(".sys-container-supp");
-  const sysSupVid = document.querySelector(".sys-supp-vid");
   const sysErr = document.querySelector(".sys-supp-err");
   const sysSuppYves = document.querySelector(".sys-supp-yves");
   const sysSuppDeso = document.querySelector(".sys-supp-deso");
@@ -21,6 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const sysFlash3 = document.querySelector(".sys-flash-3");
   const sysFlash4 = document.querySelector(".sys-flash-4");
   const sysFlash5 = document.querySelector(".sys-flash-5");
+  const sysSupVid = document.querySelector(".sys-supp-vid");
 
   sysSupVid.addEventListener("loadeddata", (e) => {
     sysClickInitButton.addEventListener("click", function () {
@@ -33,30 +33,42 @@ window.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: sysContainer,
         start: "top",
-        end: "300%",
+        end: "500%",
         scrub: true,
         pin: true,
-        markers: true,
       },
     });
 
-    if (sysClickVid.duration) {
-      tlintro
-        .to(sysClickVid, { currentTime: sysClickVid.duration })
-        .call(() => {
-          gsap.to(sysClickVid, {
-            opacity: 0,
-          });
-          sysClickSupp.classList.remove("sys-click-supp-hidden");
-          document.querySelector("body").style.overflow = "hidden";
-        });
-    }
+    tlintro.to(sysClickVid, { currentTime: sysClickVid.duration }).call(() => {
+      gsap.to(sysClickVid, {
+        opacity: 0,
+      });
+      sysClickSupp.classList.remove("sys-click-supp-hidden");
+      document.querySelector("body").style.overflow = "hidden";
+    });
 
     const sysClickSuppButton = document.querySelector(".sys-click-supp button");
 
     sysClickSuppButton.addEventListener("click", function () {
       sysClickSupp.classList.add("sys-click-supp-hidden");
       document.querySelector("body").style.overflow = "";
+    });
+
+    const sysVid = this.document.querySelector(".sys-vid");
+    const tlVid = gsap.timeline({
+      scrollTrigger: {
+        trigger: sysVid,
+        start: "top",
+        end: "+=500%",
+        scrub: true,
+        pin: true,
+      },
+    });
+
+    tlVid.to(sysSupVid, { currentTime: sysSupVid.duration }).call(() => {
+      gsap.to(sysSupVid, {
+        opacity: 0,
+      });
     });
 
     const tlsupp = gsap.timeline({
@@ -66,17 +78,10 @@ window.addEventListener("DOMContentLoaded", function () {
         end: "+=500%",
         scrub: true,
         pin: true,
-        markers: true,
       },
     });
 
     tlsupp
-      .to(sysSupVid, {
-        currentTime: sysSupVid.duration,
-        onComplete: () => {
-          sysSupVid.classList.add("sys-supp-vid-hidden");
-        },
-      })
       .to(sysErr, {
         opacity: 1,
       })
@@ -136,7 +141,6 @@ window.addEventListener("DOMContentLoaded", function () {
         end: "+=500%",
         scrub: true,
         pin: true,
-        markers: true,
       },
     });
 

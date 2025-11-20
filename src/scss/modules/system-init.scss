@@ -10,7 +10,7 @@
   }
   .sys-click-init-img {
     opacity: 1;
-    background-image: url("../img/system.png");
+    background-image: url("../img/system.png?as=webp");
     background-size: contain;
     width: 70vw;
     height: 70vh;
@@ -64,7 +64,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #ffffff;
 }
 
 .sys-init-vid {
@@ -83,6 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(20%);
 
   &-hidden {
     display: none;
@@ -90,7 +90,7 @@
 
   .sys-click-supp-img {
     opacity: 1;
-    background-image: url("../img/system.png");
+    background-image: url("../img/system.png?as=webp");
     background-size: contain;
     width: 70vw;
     height: 70vh;

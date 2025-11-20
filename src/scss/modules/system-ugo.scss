@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #ffffff;
   position: relative;
 }
 
@@ -19,7 +18,7 @@
 
   .sys-ugo-img {
     opacity: 1;
-    background-image: url("../img/system.png");
+    background-image: url("../img/system.png?as=webp");
     background-size: contain;
     width: 70vw;
     height: 70vh;
@@ -64,7 +63,7 @@
 
   .sys-ugo-restore-img {
     opacity: 1;
-    background-image: url("../img/system.png");
+    background-image: url("../img/system.png?as=webp");
     background-size: contain;
     width: 70vw;
     height: 70vh;
@@ -112,7 +111,7 @@
 
   .sys-ugo-restore-click-img {
     opacity: 1;
-    background-image: url("../img/system.png");
+    background-image: url("../img/system.png?as=webp");
     background-size: contain;
     width: 70vw;
     height: 70vh;
@@ -168,7 +167,7 @@
 
   .sys-ugo-card-img {
     opacity: 1;
-    background-image: url("../img/system.png");
+    background-image: url("../img/system.png?as=webp");
     background-size: contain;
     width: 90vw;
     height: 90vh;
