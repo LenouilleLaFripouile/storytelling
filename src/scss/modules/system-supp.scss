@@ -2,6 +2,10 @@
   position: absolute;
   transform: scale(0.9);
   width: 100%;
+
+  &-hidden {
+    display: none;
+  }
 }
 
 .sys-supp-err {
@@ -10,10 +14,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &-hidden {
-    display: none;
-  }
+  transform: scale(1.3);
+  opacity: 0;
 
   .sys-supp-err-img {
     opacity: 1;
@@ -48,10 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &-hidden {
-    display: none;
-  }
+  opacity: 0;
 
   .sys-supp-yves-img {
     opacity: 1;
@@ -86,10 +85,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &-hidden {
-    display: none;
-  }
+  opacity: 0;
 
   .sys-supp-deso-img {
     opacity: 1;

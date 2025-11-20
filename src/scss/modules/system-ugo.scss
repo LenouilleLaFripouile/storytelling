@@ -1,13 +1,12 @@
 .sys-ugo-container {
-  position: absolute;
-  z-index: 10;
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &-hidden {
-    display: none;
-  }
+  flex-direction: column;
+  background-color: #ffffff;
+  position: relative;
 }
 
 .sys-ugo {
@@ -16,10 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &-hidden {
-    display: none;
-  }
+  opacity: 0;
 
   .sys-ugo-img {
     opacity: 1;
@@ -64,10 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &-hidden {
-    display: none;
-  }
+  opacity: 0;
 
   .sys-ugo-restore-img {
     opacity: 1;
@@ -111,6 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 
   &-hidden {
     display: none;
@@ -169,15 +163,15 @@
   justify-content: center;
 
   &-hidden {
-    display: flex;
+    display: none;
   }
 
   .sys-ugo-card-img {
     opacity: 1;
     background-image: url("../img/system.png");
     background-size: contain;
-    width: 70vw;
-    height: 70vh;
+    width: 90vw;
+    height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -185,6 +179,8 @@
     align-items: center;
     gap: 70px;
     flex-direction: row;
+    max-width: 1000px;
+    padding: 100px;
   }
   h1 {
     color: #000;
@@ -218,9 +214,12 @@
   .sys-ugo-card-flex {
     display: flex;
     flex-direction: column;
+    gap: 36px;
   }
   img {
     border-radius: 10px;
     width: 50%;
+    z-index: 10;
+    position: unset;
   }
 }
